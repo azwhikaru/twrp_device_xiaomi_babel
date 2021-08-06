@@ -1,5 +1,4 @@
-# mount point       fstype    device                                                                flags
-# From TingyiChen (https://github.com/TingyiChen/android_device_xiaomi_FYJ01QP-twrp/blob/android-8.1/recovery.fstab)
+# The options marked as'#' below are options that can be removed
 
 /system			ext4	/dev/block/platform/bootdevice/by-name/system
 /system_image		emmc	/dev/block/platform/bootdevice/by-name/system		flags=display="system_image";backup=1;flashimg=1
@@ -16,7 +15,7 @@
 /logo			emmc    /dev/block/platform/bootdevice/by-name/logo		flags=backup=1
 /tee1			emmc	/dev/block/platform/bootdevice/by-name/tee1		flags=backup=1
 /tee2			emmc	/dev/block/platform/bootdevice/by-name/tee2		flags=backup=1;subpartitionof=/tee1;backup=1
-/vendor/nvcfg		ext4    /dev/block/platform/bootdevice/by-name/nvcfg		flags=backup=1
+# /vendor/nvcfg		ext4    /dev/block/platform/bootdevice/by-name/nvcfg		flags=backup=1
 /nvram			emmc	/dev/block/platform/bootdevice/by-name/nvram		flags=backup=1	
 /md1img			emmc    /dev/block/platform/bootdevice/by-name/md1img		flags=backup=1
 /md1dsp			emmc    /dev/block/platform/bootdevice/by-name/md1dsp		flags=backup=1
@@ -25,14 +24,14 @@
 /odmdtbo		emmc    /dev/block/platform/bootdevice/by-name/odmdtbo		flags=backup=1
 /loader_ext1		emmc    /dev/block/platform/bootdevice/by-name/loader_ext1	flags=backup=1
 /loader_ext2		emmc    /dev/block/platform/bootdevice/by-name/loader_ext2	flags=backup=1
-/vendor/protect_f	ext4	/dev/block/platform/bootdevice/by-name/protect1		flags=backup=1
-/vendor/protect_s	ext4	/dev/block/platform/bootdevice/by-name/protect2		flags=backup=1
+# /vendor/protect_f	ext4	/dev/block/platform/bootdevice/by-name/protect1		flags=backup=1
+# /vendor/protect_s	ext4	/dev/block/platform/bootdevice/by-name/protect2		flags=backup=1
 /expdb			emmc	/dev/block/platform/bootdevice/by-name/expdb		flags=backup=1
 /seccfg			emmc	/dev/block/platform/bootdevice/by-name/seccfg		flags=backup=1
 /frp			emmc	/dev/block/platform/bootdevice/by-name/frp		flags=backup=1
-/vendor/nvdata		ext4	/dev/block/platform/bootdevice/by-name/nvdata		flags=backup=1
+# /vendor/nvdata		ext4	/dev/block/platform/bootdevice/by-name/nvdata		flags=backup=1
 /metadata		emmc	/dev/block/platform/bootdevice/by-name/metadata		flags=backup=1
 /gz1			emmc	/dev/block/platform/bootdevice/by-name/gz1		flags=backup=1
 /gz2			emmc	/dev/block/platform/bootdevice/by-name/gz2		flags=backup=1
 /cache			ext4	/dev/block/platform/bootdevice/by-name/cache
-/usbotg			auto    /dev/block/sda1		/dev/block/sda			flags=display="Usb-Otg";storage;removable;backup=0
+/usbotg			auto    /dev/block/sda1		/dev/block/sda			flags=display="USB-OTG";storage;removable;backup=0
